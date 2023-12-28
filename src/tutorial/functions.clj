@@ -15,7 +15,7 @@
 
 (defn increment_set [x]
   (map increment x))
-
+# glömde en comment här!
 (defn DataTypes []
   #_{:clj-kondo/ignore [:inline-def]}
   (def a 1)
@@ -29,3 +29,7 @@
   (println c)
   (println d))
 (DataTypes)
+
+
+#Slänger in lite comments här
+# och lite mer här...
