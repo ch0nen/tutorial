@@ -16,11 +16,15 @@
 <<<<<<< HEAD
 (defn increment_set [x]
   (map increment x))
+<<<<<<< HEAD
 
 =======
 ;; (defn increment_set [x]
 ;;   (map increment x))
 >>>>>>> 12617e7 (Test)
+=======
+# glömde en comment här!
+>>>>>>> 534066f (lite comments)
 (defn DataTypes []
   #_{:clj-kondo/ignore [:inline-def]}
   (def a 1)
@@ -36,9 +40,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 (DataTypes)
+<<<<<<< HEAD
 =======
 (DataTypes)
 >>>>>>> 12617e7 (Test)
 =======
 (DataTypes)
 >>>>>>> e16c785 (Second commit)
+=======
+
+
+#Slänger in lite comments här
+# och lite mer här...
+>>>>>>> 534066f (lite comments)
