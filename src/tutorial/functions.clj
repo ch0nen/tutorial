@@ -30,12 +30,20 @@
   (def c 1.25e-12)
   (def d 0xfbfc)
 
+# Några kommentarer
+# bara för att få lite ny data
+
+
   (println a)
   (println b)
   (println c)
   (println d))
 <<<<<<< HEAD
+<<<<<<< HEAD
 (DataTypes)
 =======
 (DataTypes)
 >>>>>>> 12617e7 (Test)
+=======
+(DataTypes)
+>>>>>>> e16c785 (Second commit)
