@@ -11,11 +11,10 @@
 
 #(println "Hello," %)
 
-(def increment (fn [x] (+ x 1)))
+;;(def increment (fn [x] (+ x 1)))
 
-(defn increment_set [x]
-  (map increment x))
-# glömde en comment här!
+;; (defn increment_set [x]
+;;   (map increment x))
 (defn DataTypes []
   #_{:clj-kondo/ignore [:inline-def]}
   (def a 1)
@@ -29,7 +28,3 @@
   (println c)
   (println d))
 (DataTypes)
-
-
-#Slänger in lite comments här
-# och lite mer här...
