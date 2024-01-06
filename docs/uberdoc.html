@@ -2874,14 +2874,14 @@ net.brehaut.ClojureTools = (function (SH) {
   (def petStore
     &quot;The petStore docstring&quot;
     {'dog 7, 'cat 5, 'fish 10})
-  (get petStore x))</pre></td></tr><tr><td class="docs"><p>A function that greets a person by name.</p>
-</td><td class="codes"><pre class="brush: clojure">(defn greet
-  [name]
-  (str &quot;Hello, &quot; name  &quot;!&quot;))</pre></td></tr><tr><td class="docs">
-</td><td class="codes"><pre class="brush: clojure">(doc greet)
-(doc tutorial.petstore)
-(doc petStore)
-(doc petToHumanAge)</pre></td></tr><tr><td class="spacer docs">&nbsp;</td><td class="codes" /></tr><tr><td class="docs"><div class="docs-header"><a class="anchor" href="#tutorial.core" name="tutorial.core"><h1 class="project-name">tutorial.core</h1><a class="toc-link" href="#toc">toc</a></a></div></td><td class="codes" /></tr><tr><td class="docs">
+  (get petStore x))</pre></td></tr><tr><td class="docs"><p>This function returns the age of a pet</p>
+</td><td class="codes"><pre class="brush: clojure">(defn age
+  [petName petType petAge]
+  (def ratio (petToHumanAge petType))
+  (println petName &quot;is&quot; (* ratio petAge) &quot;years old in human years&quot;))</pre></td></tr><tr><td class="docs">
+</td><td class="codes"><pre class="brush: clojure">(age &quot;Fido&quot; 'dog 4)
+(age &quot;Fifi&quot; 'cat 10)
+(age &quot;Bubbles&quot; 'fish 1)</pre></td></tr><tr><td class="spacer docs">&nbsp;</td><td class="codes" /></tr><tr><td class="docs"><div class="docs-header"><a class="anchor" href="#tutorial.core" name="tutorial.core"><h1 class="project-name">tutorial.core</h1><a class="toc-link" href="#toc">toc</a></a></div></td><td class="codes" /></tr><tr><td class="docs">
 </td><td class="codes"><pre class="brush: clojure">(ns tutorial.core
   (:gen-class))</pre></td></tr><tr><td class="docs"><p>I don't do a whole lot ... yet.</p>
 </td><td class="codes"><pre class="brush: clojure">(defn -main

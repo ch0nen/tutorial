@@ -11,12 +11,12 @@
     {'dog 7, 'cat 5, 'fish 10})
   (get petStore x))
 
-(defn greet
-  "A function that greets a person by name."
-  [name]
-  (str "Hello, " name  "!"))
+(defn age
+  "This function returns the age of a pet"
+  [petName petType petAge]
+  (def ratio (petToHumanAge petType))
+  (println petName "is" (* ratio petAge) "years old in human years"))
 
-(doc greet)
-(doc tutorial.petstore)
-(doc petStore)
-(doc petToHumanAge)
+(age "Fido" 'dog 4)
+(age "Fifi" 'cat 10)
+(age "Bubbles" 'fish 1)
